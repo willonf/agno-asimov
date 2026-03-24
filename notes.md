@@ -1,0 +1,2 @@
+Toda vez que uma classe Agno é instanciada pela primeira vez, as tools são incluídas no prompt inicial do Agno, passando uma descrição do cada uma faz.
+A própria docstring do Python pode ser usada para essa "documentação" da tool.
