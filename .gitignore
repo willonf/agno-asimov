@@ -16,3 +16,18 @@ wheels/
 .idea/
 .vscode/
 
+# Miscellaneous
+tmp/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+
+# Data
+data/
+
+# Backups
+backups/
