@@ -1,10 +1,8 @@
 from agno.models.groq import Groq
 from agno.models.message import Message
-from dotenv import load_dotenv
+from variables import GROQ_API_KEY
 
-load_dotenv()
-
-model = Groq(id="openai/gpt-oss-120b")
+model = Groq(id="openai/gpt-oss-120b", api_key=GROQ_API_KEY)
 assistant_message = Message(role="assistant")
 msg = Message(
     role="user",
