@@ -1,10 +1,8 @@
-from agno.models.groq import Groq
-from agno.tools.yfinance import YFinanceTools
-
-from dotenv import load_dotenv
-
 from agno.agent import Agent
 from agno.db.sqlite import SqliteDb
+from agno.models.groq import Groq
+from agno.tools.yfinance import YFinanceTools
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -24,6 +22,6 @@ agent = Agent(
 if __name__ == "__main__":
 
     
-    # agent.print_response("Qual a cotação atual da Petrobras?", session_id="petrobras_session", user_id="analista_petrobras")
-    # agent.print_response("Qual a cotação atual da Vale?", session_id="vale_session", user_id="analista_vale")
+    agent.print_response("Qual a cotação atual da Petrobras?", session_id="petrobras_session", user_id="analista_petrobras")
+    agent.print_response("Qual a cotação atual da Vale?", session_id="vale_session", user_id="analista_vale")
     agent.print_response("Já consultei a cotação de quais empresas?", session_id="petrobras_session", user_id="analista_petrobras")
